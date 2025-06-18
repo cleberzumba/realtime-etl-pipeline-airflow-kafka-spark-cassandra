@@ -5,6 +5,9 @@ Author: [Cleber Zumba](https://github.com/cleberzumba)
 Last Updated: June 18, 2025
 
 
+![imagem](images/architecture.jpg)
+
+
 This project implements a real-time ETL architecture using the following technologies:
 
 - **Apache Airflow**: Workflow orchestration and pipeline scheduling.
