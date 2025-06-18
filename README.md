@@ -101,4 +101,4 @@ Structured user data will be stored in `tb_usuarios` table on Cassandra after be
 
 ## 🧑‍💻 Author
 
-Cleber – Data Engineer & Distributed Systems.
+Cleber Zumba – Data Engineer & Distributed Systems.
