@@ -1,4 +1,4 @@
-# Real-Time ETL Pipeline with Airflow, Kafka, Spark and Cassandra
+#### Real-Time ETL Pipeline with Airflow, Kafka, Spark and Cassandra
 
 This project implements a real-time ETL architecture using the following technologies:
 
