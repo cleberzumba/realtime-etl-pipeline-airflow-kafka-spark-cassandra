@@ -5,7 +5,7 @@ Author: [Cleber Zumba](https://github.com/cleberzumba)
 Last Updated: June 18, 2025
 
 
-![image](image/architecture.jpg)
+![imagem](image/architecture.jng)
 
 
 This project implements a real-time ETL architecture using the following technologies:
