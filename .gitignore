@@ -1,0 +1,75 @@
+# Byte-compiled / optimized / DLL files
+
+**pycache**/
+\*.py\[cod]
+\*\$py.class
+
+# Cython debug symbols
+
+cython\_debug/
+
+# Virtual environment folders
+
+.venv/
+env/
+ENV/
+venv/
+.pip-cache/
+.python-version
+
+# Jupyter Notebook checkpoints
+
+.ipynb\_checkpoints/
+
+# VS Code settings
+
+.vscode/
+
+# PyCharm settings
+
+.idea/
+
+# Airflow logs & configs
+
+logs/
+airflow\.db
+unittests.cfg
+webserver\_config.py
+
+# Docker-related files
+
+\*.log
+docker-compose.override.yml
+
+# System files (OS-generated)
+
+.DS\_Store
+Thumbs.db
+
+# Temporary files from editors
+
+\*.swp
+\*.bak
+\*.tmp
+
+# Build artifacts
+
+build/
+dist/
+\*.egg-info/
+
+# Project-specific compiled files
+
+server/dags/**pycache**/
+client/**pycache**/
+\*.pyc
+
+# Sensitive or secret files (recommended to manage secrets securely)
+
+.env
+*.env
+.env.*
+secrets.yml
+credentials.json
+token.json
+private\_key.pem
