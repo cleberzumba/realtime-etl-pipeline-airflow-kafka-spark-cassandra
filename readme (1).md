@@ -10,10 +10,10 @@ Last Updated: June 18, 2025
 
 This project implements a real-time ETL architecture using the following technologies:
 
-- **Apache Airflow**: Workflow orchestration and pipeline scheduling.
-- **Apache Kafka**: Streaming platform for ingesting real-time data.
-- **Apache Spark (PySpark)**: Distributed processing of streaming data.
-- **Apache Cassandra**: NoSQL database for scalable and high-performance storage.
+* **Apache Airflow**: Workflow orchestration and pipeline scheduling.
+* **Apache Kafka**: Streaming platform for ingesting real-time data.
+* **Apache Spark (PySpark)**: Distributed processing of streaming data.
+* **Apache Cassandra**: NoSQL database for scalable and high-performance storage.
 
 ---
 
@@ -31,12 +31,12 @@ The data pipeline works as follows:
 
 ## 📦 Technologies
 
-- Python 3.11
-- Apache Airflow 2.10.4
-- Apache Kafka 3.9.0
-- Apache Spark 3.5.4 (PySpark)
-- Apache Cassandra 5.0.2
-- Docker & Docker Compose
+* Python 3.11
+* Apache Airflow 2.10.4
+* Apache Kafka 3.9.0
+* Apache Spark 3.5.4 (PySpark)
+* Apache Cassandra 5.0.2
+* Docker & Docker Compose
 
 ---
 
@@ -44,12 +44,16 @@ The data pipeline works as follows:
 
 ```
 .
-├── dags/                          # Airflow DAGs
-├── entrypoint/                   # Entrypoint script for Airflow
-├── docker-compose.yml            # Multi-service container orchestration
-├── consumer_stream.py            # Spark consumer that writes to Cassandra
-├── requirements.txt              # Python dependencies
-└── README.md
+├── client/
+│   ├── Dockerfile                    # Container image for Spark consumer
+│   ├── LEIAME.txt
+│   └── consumer_stream.py           # Spark consumer that writes to Cassandra
+├── server/
+│   ├── LEIAME.txt
+│   ├── dags/                        # Airflow DAGs
+│   ├── docker-compose.yml          # Multi-service container orchestration
+│   ├── entrypoint/                 # Entrypoint script for Airflow
+│   └── requirements.txt            # Python dependencies
 ```
 
 ---
@@ -59,6 +63,7 @@ The data pipeline works as follows:
 1. Start all containers:
 
 ```bash
+cd server
 docker compose up -d --build
 ```
 
@@ -88,13 +93,12 @@ Structured user data will be stored in `tb_usuarios` table on Cassandra after be
 
 ## 📌 Future Improvements
 
-- Add monitoring with Prometheus + Grafana.
-- Add a REST API to expose the results.
-- Include tests and alerting mechanisms.
+* Add monitoring with Prometheus + Grafana.
+* Add a REST API to expose the results.
+* Include tests and alerting mechanisms.
 
 ---
 
 ## 🧑‍💻 Author
 
 Cleber – Data Engineer & Distributed Systems.
-
